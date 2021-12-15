@@ -3,6 +3,7 @@ package com.example.newactivity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.newactivity.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -18,5 +19,14 @@ class MainActivity : AppCompatActivity() {
         intent.putExtra("from2", 2021)
 
         binding.btnStart.setOnClickListener { startActivity(intent) }
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if (resultCode == RESULT_OK) {
+            val message = data?.getStringExtra("returnValue")
+            Toast.makeText(this, message, Toast.LENGTH_LONG).show()
+        }
     }
 }
