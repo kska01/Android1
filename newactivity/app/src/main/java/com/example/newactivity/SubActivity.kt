@@ -1,5 +1,6 @@
 package com.example.newactivity
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -18,8 +19,9 @@ class SubActivity : AppCompatActivity() {
 
         binding.btnClose.setOnClickListener {
             val returnIntent = Intent()
-            returnIntent.putExtra("returnvalue", binding.editMessage.text.toString())
-            setResult(RESULT_OK, returnIntent)
+            val message = binding.editMessage.text.toString()
+            returnIntent.putExtra("returnValue", message)
+            setResult(Activity.RESULT_OK, returnIntent)
             finish()
         }
     }
