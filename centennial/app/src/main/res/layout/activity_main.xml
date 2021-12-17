@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:drawable/edit_text"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="-34dp"
+    tools:layout_editor_absoluteY="5dp">
 
     <TextView
         android:id="@+id/firstment"
@@ -14,6 +16,7 @@
         android:layout_marginTop="48dp"
         android:text="백세시대\n백년식품"
         android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +28,7 @@
         android:layout_height="44dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="40dp"
-        android:layout_marginRight="50dp"
+        android:layout_marginRight="30dp"
         android:ems="10"
         android:hint="이메일을 입력해주세요."
         android:inputType="textEmailAddress"
@@ -39,8 +42,8 @@
         android:layout_width="match_parent"
         android:layout_height="44dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
         android:ems="10"
         android:hint="비밀번호를 입력해주세요."
         android:inputType="textPassword"
@@ -50,19 +53,68 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginRight="50dp"
+        android:id="@+id/google"
+        android:layout_width="132dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/round_button"
+        android:text="Google로 로그인"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/login"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="132dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/round_button"
         android:text="로그인"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.412"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/google"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
+    <Button
+        android:id="@+id/naver"
+        android:layout_width="132dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/round_button"
+        android:backgroundTint="#2db400"
+        android:text="naver로 로그인"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/kakao"
+        app:layout_constraintTop_toBottomOf="@+id/google" />
+
+    <Button
+        android:id="@+id/kakao"
+        android:layout_width="132dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/round_button"
+        android:backgroundTint="#fef01b"
+        android:text="kakao로 로그인"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/naver"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="회원가입"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kakao" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
