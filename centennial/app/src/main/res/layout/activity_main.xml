@@ -13,12 +13,13 @@
         android:id="@+id/firstment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="48dp"
         android:text="백세시대\n백년식품"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -54,7 +55,7 @@
 
     <Button
         android:id="@+id/google"
-        android:layout_width="132dp"
+        android:layout_width="133dp"
         android:layout_height="52dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/round_button"
@@ -67,7 +68,7 @@
 
     <Button
         android:id="@+id/login"
-        android:layout_width="132dp"
+        android:layout_width="133dp"
         android:layout_height="52dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/round_button"
@@ -80,7 +81,7 @@
 
     <Button
         android:id="@+id/naver"
-        android:layout_width="132dp"
+        android:layout_width="133dp"
         android:layout_height="52dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/round_button"
@@ -94,7 +95,7 @@
 
     <Button
         android:id="@+id/kakao"
-        android:layout_width="132dp"
+        android:layout_width="133dp"
         android:layout_height="52dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/round_button"
