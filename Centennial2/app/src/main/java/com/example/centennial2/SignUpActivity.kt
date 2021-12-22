@@ -12,6 +12,8 @@ class SignUpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+        setSupportActionBar(binding.toolbar)
 
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 }

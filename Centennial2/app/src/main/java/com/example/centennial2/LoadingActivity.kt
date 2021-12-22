@@ -23,6 +23,6 @@ class LoadingActivity : AppCompatActivity() {
         }, Duration)
     }
     companion object {
-        private const val Duration: Long = 2000
+        private const val Duration: Long = 5000
     }
 }
