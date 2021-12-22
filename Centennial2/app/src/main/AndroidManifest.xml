@@ -10,13 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Centennial2">
         <activity
+            android:name=".SignUpActivity"
+            android:parentActivityName=".LoginActivity"
+            android:theme="@style/signUpAppBar"
+            android:exported="true" />
+        <activity
             android:name=".LoginActivity"
-            android:theme="@style/Login"
             android:exported="true" />
         <activity
             android:name=".LoadingActivity"
-            android:exported="true"
-            android:theme="@style/Loading">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
