@@ -11,7 +11,82 @@
         style="@style/Theme.Centennial2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="30dp">
+
+        <EditText
+            android:id="@+id/signup_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/signup_email"
+            android:textSize="21sp"/>
+        <EditText
+            android:id="@+id/signup_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/signup_password"
+            android:textSize="21sp"/>
+        <EditText
+            android:id="@+id/signup_password_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/signup_password_check"
+            android:textSize="21sp"/>
+        <EditText
+            android:id="@+id/signup_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/signup_name"
+            android:textSize="21sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/signup_phone_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/signup_phone_number"
+                android:layout_weight="7"
+                android:textSize="21sp"/>
+            <Button
+                android:id="@+id/signup_phone_check_button"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:text="@string/signup_phone_check_button"
+                android:layout_weight="3"
+                android:background="@drawable/round_button"
+                android:backgroundTint="#a6a6a6"
+                android:layout_marginBottom="2dp"
+                android:paddingTop="5dp"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/signup_certification_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/signup_certification_number"
+            android:textSize="21sp"/>
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
