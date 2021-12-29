@@ -7,12 +7,12 @@
     tools:context=".LoginActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/login_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="50dp"
         android:text="@string/logintext"
         android:textSize="35sp"
         android:textStyle="bold"
@@ -31,12 +31,12 @@
         android:layout_marginEnd="30dp"
         android:layout_marginRight="30dp"
         android:ems="10"
-        android:hint="이메일을 입력하세요."
+        android:hint="@string/emailAddress"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/login_text" />
 
     <EditText
         android:id="@+id/password"
@@ -48,7 +48,7 @@
         android:layout_marginEnd="30dp"
         android:layout_marginRight="30dp"
         android:ems="10"
-        android:hint="비밀번호를 입력하세요."
+        android:hint="@string/password"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -56,7 +56,7 @@
         app:layout_constraintTop_toBottomOf="@+id/emailAddress" />
 
     <Button
-        android:id="@+id/loginBtn"
+        android:id="@+id/login_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -64,7 +64,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
         android:layout_marginRight="30dp"
-        android:text="로그인"
+        android:text="@string/login_button"
         android:background="@drawable/round_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -83,31 +83,31 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginBtn">
+        app:layout_constraintTop_toBottomOf="@+id/login_button">
 
         <Button
-            android:id="@+id/kakaoBtn"
+            android:id="@+id/kakao_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="5dp"
             android:layout_weight="1"
-            android:text="KAKAO로 로그인"
-            android:backgroundTint="#fef01b"
+            android:text="@string/kakao_button"
+            android:textColor="#fef01b"
             android:background="@drawable/round_button"/>
 
         <Button
-            android:id="@+id/naverBtn"
+            android:id="@+id/naver_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_weight="1"
-            android:text="NAVER로 로그인"
-            android:backgroundTint="#2db400"
+            android:text="@string/naver_button"
+            android:textColor="#2bd400"
             android:background="@drawable/round_button"/>
     </LinearLayout>
 
     <Button
-        android:id="@+id/signUpBtn"
+        android:id="@+id/signUpbtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -115,7 +115,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="30dp"
         android:layout_marginRight="30dp"
-        android:text="회원가입"
+        android:text="@string/signUpbtn"
         android:background="@drawable/round_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
