@@ -2,7 +2,7 @@
     <string name="app_name"></string>
     <string name="loadingtext">백\n년\n식\n품</string>
     <string name="logintext">백세시대\n백년식품</string>
-    <string name="sign_up">회원가</string>
+    <string name="sign_up">회원가입</string>
     <string name="signUpbtn">회원가입</string>
     <string name="naver_button">NAVER로 로그인</string>
     <string name="kakao_button">KAKAO로 로그인</string>
@@ -12,8 +12,8 @@
     <string name="signup_email">이메일 주소 (아이디)</string>
     <string name="signup_password">비밀번호</string>
     <string name="signup_password_check">비밀번호 확인</string>
-    <string name="signup_name">이름 (실명)</string>
-    <string name="signup_phone_number">휴대전화번호(\'-\'제외)</string>
+    <string name="signup_name">이름 (실명 입력)</string>
+    <string name="signup_phone_number">휴대전화번호 (\' - \'제외)</string>
     <string name="signup_certification_number">인증번호 입력</string>
     <string name="signup_phone_check_button">인증번호 전송</string>
 
