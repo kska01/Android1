@@ -55,56 +55,52 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailAddress" />
 
+
     <Button
         android:id="@+id/login_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="30dp"
         android:layout_marginRight="30dp"
-        android:text="@string/login_button"
         android:background="@drawable/round_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:orientation="horizontal"
+        android:text="@string/login_button"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_button">
+        app:layout_constraintTop_toBottomOf="@+id/password" />
 
-        <Button
-            android:id="@+id/kakao_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="5dp"
-            android:layout_weight="1"
-            android:text="@string/kakao_button"
-            android:textColor="#fef01b"
-            android:background="@drawable/round_button"/>
+    <Button
+        android:id="@+id/kakao_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/round_button"
+        android:text="@string/kakao_button"
+        android:textColor="#ffd600"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_button" />
 
-        <Button
-            android:id="@+id/naver_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="1"
-            android:text="@string/naver_button"
-            android:textColor="#2bd400"
-            android:background="@drawable/round_button"/>
-    </LinearLayout>
+    <Button
+        android:id="@+id/naver_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/round_button"
+        android:text="@string/naver_button"
+        android:textColor="#2bd400"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/kakao_button"
+        tools:layout_editor_absoluteX="171dp" />
 
     <Button
         android:id="@+id/signUpbtn"
@@ -112,13 +108,15 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="30dp"
         android:layout_marginRight="30dp"
-        android:text="@string/signUpbtn"
         android:background="@drawable/round_button"
+        android:text="@string/signUpbtn"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/naver_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
