@@ -16,6 +16,10 @@ class CustomAdapter: RecyclerView.Adapter<Holder>() {
     override fun onBindViewHolder(holder: Holder, position: Int) {
         val menu = listData.get(position)
         holder.setMenu(menu)
+
+        val layoutParams = holder.itemView.layoutParams
+        layoutParams.width = 900
+        holder.itemView.requestLayout()
     }
 
     override fun getItemCount(): Int {
