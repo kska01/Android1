@@ -20,9 +20,6 @@ class MainActivity : AppCompatActivity() {
         binding.recyclerView.adapter = adapter
         binding.recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
 
-        val spaceDecoration = RecyclerViewDecoration(1)
-        binding.recyclerView.addItemDecoration(spaceDecoration)
-
     }
 
     fun loadData(): MutableList<Menu> {
@@ -30,7 +27,8 @@ class MainActivity : AppCompatActivity() {
             Menu(R.drawable.menu1, R.string.menu1),
             Menu(R.drawable.menu2, R.string.menu2),
             Menu(R.drawable.menu3, R.string.menu3),
-            Menu(R.drawable.menu4, R.string.menu4)
+            Menu(R.drawable.menu4, R.string.menu4),
+            Menu(R.drawable.menu5, R.string.menu5)
         )
         return data
     }

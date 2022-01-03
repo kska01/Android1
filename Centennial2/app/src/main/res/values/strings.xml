@@ -4,7 +4,7 @@
     <string name="logintext">백세시대\n백년식품</string>
     <string name="sign_up">회원가입</string>
     <string name="signUpbtn">회원가입</string>
-    <string name="signup_final">회 원 가 </string>
+    <string name="signup_final">회 원 가 입</string>
     <string name="naver_button">NAVER로 시작하기</string>
    <string name="kakao_button">KAKAO로 시작하기</string>
     <string name="login_button">로그인</string>
@@ -30,5 +30,6 @@
     <string name="menu2">간장새우장</string>
     <string name="menu3">안면도 어리굴젓</string>
     <string name="menu4">젓갈</string>
+    <string name="menu5">백년의 선택</string>
 
 </resources>

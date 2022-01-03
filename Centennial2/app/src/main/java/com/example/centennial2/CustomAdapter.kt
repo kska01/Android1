@@ -20,10 +20,10 @@ class CustomAdapter: RecyclerView.Adapter<Holder>() {
         val menu = listData.get(position)
         holder.setMenu(menu)
 
-//        // 간격 설정
-//        val layoutParams = holder.itemView.layoutParams
-//        layoutParams.width = 900
-//        holder.itemView.requestLayout()
+        // 간격 설정
+        val layoutParams = holder.itemView.layoutParams
+        layoutParams.width = 1100
+        holder.itemView.requestLayout()
     }
 
     override fun getItemCount(): Int {
@@ -34,18 +34,6 @@ class CustomAdapter: RecyclerView.Adapter<Holder>() {
 class Holder(val binding: MenuLayoutBinding): RecyclerView.ViewHolder(binding.root) {
     fun setMenu(menu: Menu) {
         binding.menuImage.setImageResource(menu.menuImage)
+        binding.menuName.setText(menu.menuName)
     }
-}
-
-class RecyclerViewDecoration(private val divWidth: Int) : ItemDecoration() {
-    override fun getItemOffsets(
-        outRect: Rect,
-        view: View,
-        parent: RecyclerView,
-        state: RecyclerView.State
-    ) {
-        super.getItemOffsets(outRect, view, parent, state)
-        outRect.right = divWidth
-    }
-
 }
