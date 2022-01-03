@@ -25,6 +25,7 @@
     <string name="signup_textview2">내용보기</string>
 
 <!-- menu name -->
+    <string name="menu">MENU</string>
     <string name="menu1">간장게장</string>
     <string name="menu2">간장새우장</string>
     <string name="menu3">안면도 어리굴젓</string>
