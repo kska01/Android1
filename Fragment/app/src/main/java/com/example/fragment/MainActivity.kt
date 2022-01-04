@@ -13,10 +13,10 @@ class MainActivity : AppCompatActivity() {
 
     //프래그먼트 삽입 함수
     fun setFragment() {
-        val listFragment: ListFragment = ListFragment()
-
-        val transaction = supportFragmentManager.beginTransaction()
-        transaction.add(R.id.frameLayout, listFragment)
-        transaction.commit()
+//        val listFragment: ListFragment = ListFragment()
+//
+//        val transaction = supportFragmentManager.beginTransaction()
+//        transaction.add(R.id.frameLayout, listFragment)
+//        transaction.commit()
     }
 }
