@@ -82,4 +82,13 @@
         tools:layout_editor_absoluteX="308dp"
         tools:layout_editor_absoluteY="604dp" />
 
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="44dp"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        app:srcCompat="@drawable/ic_outline_person_24"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="604dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
