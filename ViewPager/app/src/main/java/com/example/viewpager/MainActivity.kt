@@ -3,6 +3,7 @@ package com.example.viewpager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.viewpager.databinding.ActivityMainBinding
+import com.google.android.material.tabs.TabLayoutMediator
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,5 +17,10 @@ class MainActivity : AppCompatActivity() {
         val adapter = FragmentAdapter(this)
         adapter.fragmentList = fragmentList
         binding.viewPager.adapter = adapter
+
+        val tabTitles = listOf<String>("A", "B", "C", "D")
+        TabLayoutMediator(binding.tabLayout, binding.viewPager) { tab, position ->
+            tab.text = tabTitles[position]
+        }.attach()
     }
 }
