@@ -14,7 +14,11 @@
         app:layout_constraintBottom_toTopOf="@+id/viewPager"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabMode="scrollable"
+        app:tabIndicatorFullWidth="false"
+        app:tabRippleColor="@color/black"
+        >
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
