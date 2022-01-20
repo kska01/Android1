@@ -32,4 +32,11 @@
     <string name="menu4">젓갈</string>
     <string name="menu5">백년의 선택</string>
 
+    <!-- bottom navigation-->
+    <string name="bottom_menu">메뉴</string>
+    <string name="bottom_cart">장바구니</string>
+    <string name="bottom_my100">나의백년</string>
+
+
+
 </resources>
