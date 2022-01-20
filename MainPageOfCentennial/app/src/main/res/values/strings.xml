@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MainPageOfCentennial</string>
+    <string name="bottom_menu">메뉴</string>
+    <string name="bottom_cart">장바구니</string>
+    <string name="bottom_my100">나의백년</string>
+</resources>
