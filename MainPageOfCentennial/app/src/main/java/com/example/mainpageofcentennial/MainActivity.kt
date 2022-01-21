@@ -17,12 +17,12 @@ class MainActivity : AppCompatActivity() {
 
         BottomNavigationView.OnNavigationItemSelectedListener { item ->
             when(item.itemId) {
-                R.id.item2 -> {
+                R.id.bottom_cart -> {
                     val intent = Intent(this, CartActivity::class.java)
                     startActivity(intent)
                     true
                 }
-                R.id.item3 -> {
+                R.id.bottom_my100 -> {
                     val intent = Intent(this, My100Activity::class.java)
                     startActivity(intent)
                     true
