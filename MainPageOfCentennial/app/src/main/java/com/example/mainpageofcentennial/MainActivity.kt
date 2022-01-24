@@ -22,11 +22,7 @@ class MainActivity : AppCompatActivity() {
                     startActivity(intent)
                     true
                 }
-                R.id.bottom_my100 -> {
-                    val intent = Intent(this, My100Activity::class.java)
-                    startActivity(intent)
-                    true
-                }
+
                 else -> false
             }
         }
