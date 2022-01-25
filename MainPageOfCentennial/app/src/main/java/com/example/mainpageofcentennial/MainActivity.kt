@@ -16,15 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(vinding.root)
 
         BottomNavigationView.OnNavigationItemSelectedListener { item ->
-            when(item.itemId) {
-                R.id.bottom_cart -> {
-                    val intent = Intent(this, CartActivity::class.java)
-                    startActivity(intent)
-                    true
-                }
 
-                else -> false
-            }
         }
     }
 }
