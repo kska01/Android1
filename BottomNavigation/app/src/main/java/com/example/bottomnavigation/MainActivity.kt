@@ -1,11 +1,10 @@
 package com.example.bottomnavigation
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.FrameLayout
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.bottomnavigation.databinding.ActivityMainBinding
-
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -35,10 +34,10 @@ class MainActivity : AppCompatActivity() {
         bottomNavigation.selectedItemId = R.id.menu
 
         // MenuFragment Adapter
-        val fragmentList = listOf(CrabFragment(), ShrimpFragment(), OysterFragment(), JeotgalFragment(), ChoiceFragment())
-        val adapter = FragmentAdapter(this)
-        adapter.fragmentList = fragmentList
-        val menuFragment = MenuFragment()
+//        val fragmentList = listOf(CrabFragment(), ShrimpFragment(), OysterFragment(), JeotgalFragment(), ChoiceFragment())
+//        val adapter = FragmentAdapter(this)
+//        adapter.fragmentList = fragmentList
+//        val menuFragment = MenuFragment()
     }
 
     private fun changeFragment(fragment: Fragment) {

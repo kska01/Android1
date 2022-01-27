@@ -1,10 +1,9 @@
 package com.example.bottomnavigation
 
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
 
-class FragmentAdapter(fragmentActivity: FragmentActivity) : FragmentStateAdapter(fragmentActivity) {
+class FragmentAdapter(fragmentActivity: MenuFragment) : FragmentStateAdapter(fragmentActivity) {
 
     var fragmentList = listOf<Fragment>()
 
