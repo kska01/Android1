@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Centennial</string>
+    <string name="loadingtext">백\n년\n식\n품</string>
+    <string name="logintext">백세시대\n백년식품</string>
+    <string name="sign_up">회원가입</string>
+    <string name="signUpbtn">회원가입</string>
+    <string name="signup_final">회 원 가 입</string>
+    <string name="naver_button">NAVER로 시작하기</string>
+   <string name="kakao_button">KAKAO로 시작하기</string>
+    <string name="login_button">로그인</string>
+    <string name="password">비밀번호를 입력하세요.</string>
+    <string name="emailAddress">이메일을 입력하세요.</string>
+    <string name="signup_email">이메일 주소 (아이디)</string>
+    <string name="signup_password">비밀번호</string>
+    <string name="signup_password_check">비밀번호 확인</string>
+    <string name="signup_name">이름 (실명 입력)</string>
+    <string name="signup_phone_number">휴대전화번호 (\' - \'제외)</string>
+    <string name="signup_certification_number">인증번호 입력</string>
+    <string name="signup_phone_check_button">인증번호 전송</string>
+    <string name="signup_checkbox1">이용약관 (필수)</string>
+    <string name="signup_checkbox2">개인정보 수집 및 이용 (필수)</string>
+    <string name="signup_checkbox3">SMS 수신동의</string>
+    <string name="signup_checkbox4">전체동의</string>
+    <string name="signup_textview1">내용보기</string>
+    <string name="signup_textview2">내용보기</string>
+
+<!-- menu name -->
+    <string name="menu">MENU</string>
+    <string name="menu1">간장게장</string>
+    <string name="menu2">간장새우장</string>
+    <string name="menu3">안면도 어리굴젓</string>
+    <string name="menu4">젓갈</string>
+    <string name="menu5">백년의 선택</string>
+
+    <!-- bottom navigation-->
+    <string name="bottom_menu">메뉴</string>
+    <string name="bottom_cart">장바구니</string>
+    <string name="bottom_my100">나의백년</string>
+
+
+
+</resources>
